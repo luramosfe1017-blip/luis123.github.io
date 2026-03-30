@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #0f0f0f;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .card {
+        background: #1a1a1a;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+        max-width: 350px;
+        animation: fade 1.5s ease;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #ff4b5c;
+    }
+
+    h1 {
+        margin: 20px 0 10px;
+        font-size: 26px;
+    }
+
+    p {
+        color: #ccc;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background: #ff4b5c;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff6b7a;
+    }
+
+    #mensaje {
+        margin-top: 20px;
+        display: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    @keyframes fade {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+    <img src="foto.jpg.jpeg">
+
+    <h1>Para ti mi reinita preciosa 💖</h1>
+    <p>te amo...</p>
+
+    <button onclick="mostrar()">Toca aquí</button>
+
+    <div id="mensaje">
+        Mi chinita hermosa 💕 me encantas demasiado, de verdad eres la reina de mi vida 👑
+    </div>
+
+</div>
+
+<script>
+function mostrar() {
+    document.getElementById("mensaje").style.display = "block";
+}
+</script>
+
+</body>
+</html>
